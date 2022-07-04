@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra Papel Tesoura!</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="all">
+
+        <div class="title">Pedra Papel Tesoura</div>
+
+        <div class="nG"><button id="newGame">De novo</button></div>
+
+        <div class="scoreDisplay">
+            <div class="scorePdisplay"></div>
+            <div class="scoreCdisplay"></div>
+        </div>
+
+        <div class="main">
+            <div id="rock"><img src="rock.svg" alt=""></div>
+            <div id="paper"><img src="paper.svg" alt=""></div>
+            <div id="scissors"><img class="inv" src="scissors.svg" alt=""></div>
+        </div>
+    </div>
+    <div class="newLine">Faça sua jogada! Quem fizer 5 pontos, ganha a partida!</div>
+
+
+    <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <div class="centr">
+            <h1 id="winMsg"></h1>
+        </div>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
